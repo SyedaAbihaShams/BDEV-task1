@@ -1,0 +1,80 @@
+<section class="top-section">
+    <img src="../../../assets/images/desktop/image-hero.jpg" alt="" class="top-section-bg-img">
+    <div class="top-content-container">
+        <div class="nav-and-title-container">
+            <div class="title">loopstudios</div>
+            <nav class="top-section-nav-bar">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="tag-line">IMMERSIVE EXPERIENCES THAT DELIVERS</div>
+    </div>
+    <div class="overlay"></div>
+</section>
+
+<section class="bottom-section">
+    <div class="bottom-content-container">
+        <div class="vr-guy-container">
+            <div class="vr-guy-image-container">
+                <img src="../../../assets/images/desktop/image-interactive.jpg" alt="" srcset="">
+            </div>
+            <div class="vr-guy-text-container">
+                <h2 class="vr-guy-title">THE LEADER IN INTERACTIVE VR</h2>
+                <p class="vr-guy-para">
+                    Founded in 2011, Loopstudios has been producing world-class
+                    virtual reality projects for some of the best companies around the
+                    globe. Our award-winning creations have transformed
+                    businesses through digital experiences that bind to their brand.
+                </p>
+            </div>
+        </div>
+    </div>
+    <section class="our-creations-section">
+        <div class="our-creations-top-container">
+            <div class="our-creations-title">
+                OUR CREATIONS
+            </div>
+            <button class="see-all-btn">SEE ALL</button>
+        </div>
+    </section>
+    <section class="cards-section">
+        <div class="cards-container">
+            <div class="card" *ngFor="let cardTitle of cardsTitles; let i = index">
+                <img src="{{cardsImagesPaths[i]}}" alt="" class="card-bg-img">
+                <div class="card-title">{{cardTitle}}</div>
+                <div class="card-overlay"></div>
+            </div>
+        </div>
+    </section>
+</section>
+<footer>
+    <div class="footer-row">
+        <div class="footer-title">
+            loopstudios
+        </div>
+        <ul class="footer-ul">
+            <li><img src="../../../assets/icons/icon-facebook.svg" alt=""></li>
+            <li><img src="../../../assets/icons/icon-instagram.svg" alt=""></li>
+            <li><img src="../../../assets/icons/icon-pinterest.svg" alt=""></li>
+            <li><img src="../../../assets/icons/icon-twitter.svg" alt=""></li>
+        </ul>
+    </div>
+    <div class="footer-row">
+        <ul class="footer-ul">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <div class="footer-description">
+            &copy; 2021 Loopstudios. All rights reserved.
+        </div>
+    </div>
+</footer>
